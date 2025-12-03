@@ -1,11 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apple Store Online - Apple (IN)</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.cdnfonts.com/css/sf-pro-display"
+      rel="stylesheet"
+    />
+    <style>
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <title>Apple Store Online - Apple (IN)</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/c764d5075a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-[#F5F5F7]">
+    <!-- Header -->
+    <!-- Navbar -->
+    <header>
+      <nav class="w-full bg-[#f5f5f7]">
+        <div class="max-w-[1024px] w-full mx-auto">
+          <div
+            class="w-full flex items-center gap-10 justify-between px-4 py-3 md:py-2"
+          >
+            <!-- Apple Logo -->
+            <div class="flex items-center">
+              <a href="#">
+                <i class="fa-brands fa-apple text-md"></i>
+              </a>
+            </div>
+
+            <!-- Navigation Menu (Desktop Only) -->
+            <div
+              class="hidden lg:flex gap-10 text-[13px] text-gray-800 font-normal"
+            >
+              <a href="#" class="hover:text-gray-600 whitespace-nowrap"
+                >Store</a
+              >
+              <a href="#" class="hover:text-gray-600 whitespace-nowrap">Mac</a>
+              <a href="#" class="hover:text-gray-600 whitespace-nowrap">iPad</a>
+              <a href="#" class="hover:text-gray-600 whitespace-nowrap"
+                >iPhone</a
+              >
+              <a href="#" class="hover:text-gray-600 whitespace-nowrap"
+                >Watch</a
+              >
+              <a href="#" class="hover:text-gray-600 whitespace-nowrap"
+                >AirPods</a
+              >
+              <a href="#" class="hover:text-gray-600 whitespace-nowrap"
+                >TV & Home</a
+              >
+              <a href="#" class="hover:text-gray-600 whitespace-nowrap"
+                >Entertainment</a
+              >
+              <a href="#" class="hover:text-gray-600 whitespace-nowrap"
+                >Accessories</a
+              >
+              <a href="#" class="hover:text-gray-600 whitespace-nowrap"
+                >Support</a
+              >
+            </div>
+
+            <!-- Right Icons -->
+            <div class="flex items-center space-x-8">
+              <button>
+                <i
+                  class="fa-solid fa-magnifying-glass text-gray-600 text-sm"
+                ></i>
+              </button>
+
+              <button>
+                <i class="fa-solid fa-bag-shopping text-gray-600 text-sm"></i>
+              </button>
+
+              <button id="menuToggle" class="lg:hidden">
+                <i class="fa-solid fa-bars-staggered"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!--  Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="fixed inset-0 bg-white z-50 translate-x-full transition-transform duration-300 lg:hidden"
+      >
+        <div class="flex justify-end p-6">
+          <button id="closeMenu">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <ul class="flex flex-col text-xl space-y-6 font-medium px-14 mt-4">
+          <li>Store</li>
+          <li>Mac</li>
+          <li>iPad</li>
+          <li>iPhone</li>
+          <li>Watch</li>
+          <li>AirPods</li>
+          <li>TV & Home</li>
+          <li>Entertainment</li>
+          <li>Accessories</li>
+          <li>Support</li>
+        </ul>
+      </div>
+
+      <!-- Offers -->
+      <div class="w-full bg-white border-b border-gray-200">
+        <div class="max-w-[1024px] mx-auto px-4 py-5 md:py-3 lg:py-5">
+          <p
+            class="text-center text-[15px] md:text-[11px] lg:text-[15px] text-[#1D1D1F] leading-tight px-6"
+          >
+            Get up to 6 months of No Cost EMI<sup>*</sup> plus up to ₹10000.00
+            instant cashback<sup>**</sup>
+            on selected products with eligible cards.
+            <a href="#" class="text-[#0066CC] hover:underline"
+              >See offers<span
+                class="inline-block align-middle ml-1.5 -mt-1 text-[#0066CC]"
+                ><i class="fa-regular fa-square-plus"></i>
+              </span>
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="w-full h-16 bg-gradient-to-r from-[#0064d9] via-[#40b0ff] via-[#ffe680] via-[#ff9f1a] to-[#ff6a3d] [mask-image:radial-gradient(ellipse_at_top,black_40%,transparent_75%)]"
+      ></div>
+    </header>
+
+    <main>
+      <!-- Store Section -->
+      <div class="w-full">
+        <div
+          class="mx-[22px] xl:mx-[140px] flex flex-col md:flex-row md:items-center justify-between"
+        >
+          <!-- LEFT: Title -->
+          <h1
+            class="text-[50px] lg:text-[72px] xl:text-[80px] font-semibold tracking-tight bg-gradient-to-r from-[#337ae5] via-[#408fe5] via-[#d4734a] to-[#ea6b2e] bg-clip-text text-transparent select-none leading-[1.05]"
+          >
+            Store
+          </h1>
+
+          <!-- RIGHT: Message -->
+          <div class="md:text-right mt-4 lg:mt-8">
+            <p
+              class="text-[20px] md:text-[22px] lg:text-[28px] font-[600] text-gray-800 tracking-tight leading-tight"
+            >
+              Give something special <br />
+              this holiday.
+            </p>
+
+            <a
+              href="#"
+              class="inline-block mt-4 text-[14px] md:text-[11px] lg:text-[15px] text-blue-600 hover:underline font-medium tracking-tight leading-tight"
+            >
+              Find an Apple Store
+              <i class="fa-solid fa-arrow-up text-xs rotate-45"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Store Menu -->
+      <div
+        class="mx-[22px] xl:mx-[140px] max-w-[1600px] w-full relative py-10 select-none overflow-x-hidden"
+      >
+        <div
+          id="categoryScroll"
+          class="w-full flex items-center gap-4 lg:gap-6 overflow-x-auto overflow-y-hidden scroll-smooth snap-x snap-mandatory whitespace-nowrap no-scrollbar py-6 "
+        >
+          <!-- ITEM -->
+          <div class="flex flex-col items-center gap-1.5 shrink-0">
+            <img
+              src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-mac-nav-202510?wid=400&hei=260&fmt=png-alpha&.v=M1Q3OGxnb1lBaHhqNjZ2OVRXZmx4YkVwOVNLbHRldEZZYkpvZ0VDM1ZJYisrUlZaSVRoWVYzU0Qra0FoTmUwNng2bitObzZwQzk4cEorV1dZdzhIazlhTkRKemhDN0NEc1VzN1ZjMGR5dUk"
+              class="h-16 md:h-16 lg:h-20"
+            />
+            <p class="text-[15px] md:text-[12px] lg:text-[14px] mt-2 font-medium text-gray-800">Mac</p>
+          </div>
+
+          <div class="flex flex-col items-center gap-1.5 shrink-0">
+            <img
+              src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-iphone-nav-202509?wid=1200&hei=780&fmt=png-alpha&.v=dW5XbHI1eDVpd01qWUU4bFRtWGZXM1doT212VzJoWjBSKzRpbmNETHN1QnRHU3BERzdnOWdiQkwvWTZGajY2b1M0TjRWdzF2UjRGVEY0c3dBQVZ6VFN0TmdKaCs3NTJMbFVuOGp2LzI5RGc"
+              class="h-16 md:h-16 lg:h-20"
+            />
+            <p class="text-[15px] md:text-[12px] lg:text-[14px] mt-2 font-medium text-gray-800">
+              iPhone
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center gap-1.5 shrink-0">
+            <img
+              src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-ipad-nav-202405?wid=400&hei=260&fmt=png-alpha&.v=dW5XbHI1eDVpd01qWUU4bFRtWGZXNGFLQTJVNnlNQmQrVmRBYnZYei9jckUzelNmMnRxajE0NHhmMWtLazl6eG53M0FRZHBXNTh1U1lFVEtSR2YzTm5qbE56RWRpRFNIRXZvbkd2S0l5dTg"
+              class="h-16 md:h-16 lg:h-20"
+            />
+            <p class="text-[15px] md:text-[12px] lg:text-[14px] mt-2 font-medium text-gray-800">
+              iPad
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center gap-1.5 shrink-0">
+            <img
+              src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-watch-nav-202509_GEO_IN?wid=400&hei=260&fmt=png-alpha&.v=S0tSVzBtSkRkSFFhMm1zS1NmeWtkK0gvNGFhODF5SWpidW9tVnFmL2IrcnZGQmhUaHlPN016cFdzNFJtZThkQ2M5THdmR1U4Nmp4b2NFbEg2N21UQzYzZVFZZGtHNUI4c1NvME1xTTYxSzZ1ZUVMek0rc2U0U3QwOE5USS9PYTQ"
+              class="h-16 md:h-16 lg:h-20"
+            />
+            <p class="text-[15px] md:text-[12px] lg:text-[14px] mt-2 font-medium text-gray-800">
+              Apple Watch
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center gap-1.5 shrink-0">
+            <img
+              src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-airpods-nav-202509?wid=400&hei=260&fmt=png-alpha&.v=Q0Z1bWFqMUpRRnp3T0Y0VWJpdk1yMDhFUStvWHB3SDlDa3VrdUZORWRqeld1aTN5QlRYNG5PRjJxc2d1RklXbVM0TjRWdzF2UjRGVEY0c3dBQVZ6VGZUMjJQZFhhT2thWmkxZjhra3FyZEk"
+              class="h-16 md:h-16 lg:h-20"
+            />
+            <p class="text-[15px] md:text-[12px] lg:text-[14px] mt-2 font-medium text-gray-800">
+              AirPods
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center gap-1.5 shrink-0">
+            <img
+              src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-airtags-nav-202108?wid=400&hei=260&fmt=png-alpha&.v=Q0Z1bWFqMUpRRnp3T0Y0VWJpdk1ydzduWDk4YUM5R1JVL2gwcEZnWWNaRFd1aTN5QlRYNG5PRjJxc2d1RklXbVM0TjRWdzF2UjRGVEY0c3dBQVZ6VFltc1ByWXViNGVYdEdGdkhJbjJoMGs"
+              class="h-16 md:h-16 lg:h-20"
+            />
+            <p class="text-[15px] md:text-[12px] lg:text-[14px] mt-2 font-medium text-gray-800">
+              AirTag
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center gap-1.5 shrink-0">
+            <img
+              src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-appletv-nav-202210?wid=400&hei=260&fmt=png-alpha&.v=T0wvM1N3YUcxQ09qK0VNRkl1RU1BZFM5WnN0RmVZRmVXQ0FCUWJjbnJDald1aTN5QlRYNG5PRjJxc2d1RklXbVM0TjRWdzF2UjRGVEY0c3dBQVZ6VFZ3YmJrVi9SakQxWUcrYWQwVXc5VTA"
+              class="h-16 md:h-16 lg:h-20"
+            />
+            <p class="text-[15px] md:text-[12px] lg:text-[14px] mt-2 font-medium text-gray-800">
+              Apple TV 4K
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center gap-1.5 shrink-0">
+            <img
+              src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-homepod-nav-202301?wid=400&hei=260&fmt=png-alpha&.v=WVcvamRucHVMMWs5SXZ3bVJ3Q2hpZGR0czFXNWdCUW14eTN2U29pLzNMcld1aTN5QlRYNG5PRjJxc2d1RklXbVM0TjRWdzF2UjRGVEY0c3dBQVZ6VFJmbWU0TjJLamxsdTltNkZVZ1RhbDA"
+              class="h-16 md:h-16 lg:h-20"
+            />
+            <p class="text-[15px] md:text-[12px] lg:text-[14px] mt-2 font-medium text-gray-800">
+              HomePod
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center gap-1.5 shrink-0">
+            <img
+              src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-accessories-nav-202509?wid=400&hei=260&fmt=png-alpha&.v=QnhsNk96S0o4R1dkN2FveStNM1hwNzZGMHVrNGw2NTM5Vmk2bHZzMXQ3aWRqT2drRk00QWZTdStjaG1MbFN0Z1BrcjVFNVdueFRVbVY3TGtiL2RjUWZiYi92WkVCUEt5TCtGS2UwaWpxS3I3V3pZTFFiS3ZLYmI4VE9UR00xblE"
+              class="h-16 md:h-16 lg:h-20"
+            />
+            <p class="text-[15px] md:text-[12px] lg:text-[14px] mt-2 font-medium text-gray-800">
+              Accessories
+            </p>
+          </div>
+        </div>
+
+        <!-- RIGHT SLIDE BUTTON (Mobile Only) -->
+        <button
+          id="slideRight"
+          class="w-12 h-12 lg:hidden absolute right-2 top-1/2 -translate-y-1/2 bg-[#d2d2d7a3] rounded-full p-2 active:scale-90"
+        >
+          <i class="fa-solid fa-chevron-right text-gray-700 text-2xl"></i>
+        </button>
+      </div>
+    </main>
+
+    <!-- Simple JS -->
+    <script>
+      const toggle = document.getElementById("menuToggle");
+      const closeMenu = document.getElementById("closeMenu");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      toggle.onclick = () => mobileMenu.classList.remove("translate-x-full");
+      closeMenu.onclick = () => mobileMenu.classList.add("translate-x-full");
+    </script>
+    <script>
+      const scrollBox = document.getElementById("categoryScroll");
+      const slideBtn = document.getElementById("slideRight");
+
+      slideBtn.addEventListener("click", () => {
+        const itemWidth = scrollBox.children[0].offsetWidth + 64; // 64 = gap-16
+        scrollBox.scrollBy({ left: itemWidth, behavior: "smooth" });
+      });
+    </script>
+  </body>
 </html>
