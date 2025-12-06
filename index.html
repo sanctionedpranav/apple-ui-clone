@@ -7,6 +7,11 @@
       href="https://fonts.cdnfonts.com/css/sf-pro-display"
       rel="stylesheet"
     />
+    <link
+      rel="shortcut icon"
+      href="https://www.apple.com/favicon.ico"
+      type="image/x-icon"
+    />
     <style>
       body {
         font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue",
@@ -18,6 +23,8 @@
     </style>
     <title>Apple Store Online - Apple (IN)</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
     <script
       src="https://kit.fontawesome.com/c764d5075a.js"
       crossorigin="anonymous"
@@ -32,14 +39,12 @@
           <div
             class="w-full flex items-center gap-10 justify-between px-4 py-3 md:py-2"
           >
-            <!-- Apple Logo -->
             <div class="flex items-center">
               <a href="#">
                 <i class="fa-brands fa-apple text-md"></i>
               </a>
             </div>
 
-            <!-- Navigation Menu (Desktop Only) -->
             <div
               class="hidden lg:flex gap-10 text-[13px] text-gray-800 font-normal"
             >
@@ -71,7 +76,6 @@
               >
             </div>
 
-            <!-- Right Icons -->
             <div class="flex items-center space-x-8">
               <button>
                 <i
@@ -91,7 +95,6 @@
         </div>
       </nav>
 
-      <!--  Mobile Menu -->
       <div
         id="mobileMenu"
         class="fixed inset-0 bg-white z-50 translate-x-full transition-transform duration-300 lg:hidden"
@@ -116,7 +119,6 @@
         </ul>
       </div>
 
-      <!-- Offers -->
       <div class="w-full bg-white border-b border-gray-200">
         <div class="max-w-[1024px] mx-auto px-4 py-5 md:py-3 lg:py-5">
           <p
@@ -140,20 +142,18 @@
       ></div>
     </header>
 
-    <main class="">
+    <main class="lg:pl-[22px] xl:pl-[120px]">
       <!-- Store Section -->
       <div class="w-full">
         <div
-          class="mx-[22px] xl:mx-[140px] flex flex-col md:flex-row md:items-center justify-between"
+          class="px-[22px] xl:px-[140px] flex flex-col md:flex-row md:items-center justify-between"
         >
-          <!-- LEFT: Title -->
           <h1
             class="text-[50px] lg:text-[72px] xl:text-[80px] font-semibold tracking-tight bg-gradient-to-r from-[#337ae5] via-[#408fe5] via-[#d4734a] to-[#ea6b2e] bg-clip-text text-transparent select-none leading-[1.05]"
           >
             Store
           </h1>
 
-          <!-- RIGHT: Message -->
           <div class="md:text-right mt-4 lg:mt-8">
             <p
               class="text-[20px] md:text-[22px] lg:text-[28px] font-[600] text-gray-800 tracking-tight leading-tight"
@@ -175,13 +175,12 @@
 
       <!-- Store Menu -->
       <div
-        class="xl:mx-[140px] max-w-[1600px] w-full relative py-10 select-none overflow-x-hidden"
+        class="xl:px-[140px] max-w-[1600px] w-full relative py-10 select-none overflow-x-hidden"
       >
         <div
           id="categoryScroll"
           class="w-full flex items-center gap-5 md:gap-4 lg:gap-6 overflow-x-auto overflow-y-hidden scroll-smooth snap-x snap-mandatory whitespace-nowrap no-scrollbar py-8 md:py-0 lg:py-8 pl-[22px]"
         >
-          <!-- ITEM -->
           <div class="flex flex-col items-center gap-1.5 shrink-0">
             <img
               src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-13-mac-nav-202510?wid=400&hei=260&fmt=png-alpha&.v=M1Q3OGxnb1lBaHhqNjZ2OVRXZmx4YkVwOVNLbHRldEZZYkpvZ0VDM1ZJYisrUlZaSVRoWVYzU0Qra0FoTmUwNng2bitObzZwQzk4cEorV1dZdzhIazlhTkRKemhDN0NEc1VzN1ZjMGR5dUk"
@@ -301,9 +300,7 @@
       </div>
 
       <!-- Inspiring gifts -->
-      <div
-        class="lg:pl-[22px] xl:pl-[120px] w-full md:py-4 select-none relative"
-      >
+      <div class="w-full md:py-4 select-none relative">
         <!-- Header -->
         <div
           class="block md:flex flex-row gap-1 items-start w-full font-[500] text-[24px] md:text-[20px] lg:text-[29px] leading-tight tracking-tight mb-2 lg:m-0 pl-[22px]"
@@ -321,7 +318,7 @@
 
         <div
           id="categoryScroll"
-          class="relative w-full flex items-center gap-5 md:gap-4 lg:gap-5 overflow-x-auto overflow-y-hidden scroll-smooth snap-x snap-mandatory whitespace-nowrap no-scrollbar py-8 md:py-0 lg:py-8 px-[22px]"
+          class="relative w-full flex items-center gap-5 md:gap-4 lg:gap-5 overflow-x-auto overflow-y-hidden scroll-smooth snap-x snap-mandatory whitespace-nowrap no-scrollbar py-4 md:py-3 lg:py-8 px-[22px]"
         >
           <div
             class="relative flex flex-col overflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] md:min-w-[22.2rem] md:min-w-[22.2rem] lg:min-w-[480px] h-[25rem] lg:h-[500px]"
@@ -333,8 +330,7 @@
               --bg-url: url('https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-50-holiday-iphone-17-pro-202511?wid=960&hei=1000&fmt=jpeg&qlt=90');
             "
           >
-            <!-- CONTENT -->
-            <div class="px-[1.8rem] py-[3rem] z-[2]">
+            <div class="px-[1.8rem] py-[2rem] z-[2]">
               <h3
                 class="text-[22px] lg:text-[28px] text-[#1d1d1f] mt-0 leading-[1.1] font-medium md:font-semibold"
               >
@@ -364,10 +360,9 @@
               --bg-url: url('https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-50-holiday-macbook-pro-202511?wid=960&hei=1000&fmt=jpeg&qlt=90&.v=UWdrNzNrY0ZiOGhRNlVuUlF4U3JoNmpHK2tTaEJpamxmbmdxR0xsQ1lsRDZqM2NrRWhBQWp6Y0VabWoxUktZZllEamZDVFNES0txdDcrN05FQnRVVVZIRWc3ZElMR0hNTHNzOE4xdkZ3N2NpbDRIRWlLN2J5NUw1OFB3UTNQY2I');
             "
           >
-            <!-- CONTENT -->
-            <div class="p-[3rem] z-[2]">
+            <div class="px-[1.8rem] py-[2rem] z-[2]">
               <h3
-                class="text-[22px] lg:text-[28px] text-[#1d1d1f] mt-0 leading-[1.1] font-medium md:font-semibold"
+                class="text-[20px] lg:text-[28px] text-[#1d1d1f] mt-0 leading-[1.1] font-medium md:font-semibold"
               >
                 MacBook Pro 14” with M5
               </h3>
@@ -395,8 +390,7 @@
               --bg-url: url('https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-50-holiday-ipad-pro-202511?wid=960&hei=1000&fmt=jpeg&qlt=90&.v=UWdrNzNrY0ZiOGhRNlVuUlF4U3JoOHBEMFY1ZWJ6N3JKaGFIMGVpb0E1SVdLZXJqVmFsbnhRcUdNVU4xNFVUZjczTGJ1bkVZOVdxMC9CSUwydmQ4a0NEQitwUkl0K1BsbXBFa3ZzYkFwT0lJZlg1K1VSMzYrZmlTTjlzTnRzUFM');
             "
           >
-            <!-- CONTENT -->
-            <div class="p-[3rem] z-[2]">
+            <div class="px-[1.8rem] py-[2rem] z-[2]">
               <h3
                 class="text-[22px] lg:text-[28px] text-[#1d1d1f] mt-0 leading-[1.1] font-medium md:font-semibold"
               >
@@ -426,8 +420,7 @@
               --bg-url: url('https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-50-holiday-watch-s11-202511?wid=960&hei=1000&fmt=jpeg&qlt=90&.v=UWdrNzNrY0ZiOGhRNlVuUlF4U3JoNm1CcUdGVVdYV0JaTXRqdUlRVTRRZUx6Q1VSQ3BmNkIrSU9EZTEwMzltNFJSeXJaL3JqNm9jc2psYU5Qelh0TmhtejV5bnNoUG82YkVqZVhGVHJRSjd0bER1WGZ5VTI5OHA0ZWhhK1hmQm8');
             "
           >
-            <!-- CONTENT -->
-            <div class="p-[3rem] z-[2]">
+            <div class="px-[1.8rem] py-[2rem] z-[2]">
               <h3
                 class="text-[22px] lg:text-[28px] text-[#1d1d1f] mt-0 leading-[1.1] font-medium md:font-semibold"
               >
@@ -457,8 +450,7 @@
               --bg-url: url('https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-50-holiday-iphone-air-202511?wid=960&hei=1000&fmt=jpeg&qlt=90&.v=UWdrNzNrY0ZiOGhRNlVuUlF4U3JoNjhTUlpZTGxJbXh5dHNBa0lFZi95dVJrM1JudG1iZ3ZLdGhSR1FVNDJUb3AwckMxbExydC8yeDhtUjlFVHdKVmtQQ3ZsREVjcTMrNnFZZjNPc2lwS25rL2VtMlRFYkdadjVLcmV6WE1IeDU');
             "
           >
-            <!-- CONTENT -->
-            <div class="p-[3rem] z-[2]">
+            <div class="px-[1.8rem] py-[2rem] z-[2]">
               <h3
                 class="text-[22px] lg:text-[28px] text-[#1d1d1f] mt-0 leading-[1.1] font-medium md:font-semibold"
               >
@@ -488,8 +480,7 @@
               --bg-url: url('https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-50-holiday-macbook-air-202511?wid=960&hei=1000&fmt=jpeg&qlt=90&.v=UWdrNzNrY0ZiOGhRNlVuUlF4U3JoemNuSDFjY1g5TXJ2VDdqcm9MQmhkbG5WN1AwSEVaRjI4R0JlQ1VUZWZLMVlEamZDVFNES0txdDcrN05FQnRVVVZIRWc3ZElMR0hNTHNzOE4xdkZ3N2VlUkJkMkh0cHFPU3lpTkxkNVJ2c1Q');
             "
           >
-            <!-- CONTENT -->
-            <div class="p-[3rem] z-[2]">
+            <div class="px-[1.8rem] py-[2rem] z-[2]">
               <h3
                 class="text-[22px] lg:text-[28px] text-[#1d1d1f] mt-0 leading-[1.1] font-medium md:font-semibold"
               >
@@ -519,8 +510,7 @@
               --bg-url: url('https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-50-holiday-iphone-17-202511?wid=960&hei=1000&fmt=jpeg&qlt=90&.v=UWdrNzNrY0ZiOGhRNlVuUlF4U3Jod29LUXdLa0l4eHE1eFJDMGV5aG5PcUx6Q1VSQ3BmNkIrSU9EZTEwMzltNFJSeXJaL3JqNm9jc2psYU5Qelh0TmhtejV5bnNoUG82YkVqZVhGVHJRSjR5SHhQUEh4akwvR1cxaFMzMHR4UUM');
             "
           >
-            <!-- CONTENT -->
-            <div class="p-[3rem] z-[2]">
+            <div class="px-[1.8rem] py-[2rem] z-[2]">
               <h3
                 class="text-[22px] lg:text-[28px] text-[#1d1d1f] mt-0 leading-[1.1] font-medium md:font-semibold"
               >
@@ -550,8 +540,7 @@
               --bg-url: url('https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-50-holiday-watch-ultra-202511_GEO_IN?wid=960&hei=1000&fmt=jpeg&qlt=90&.v=UWdrNzNrY0ZiOGhRNlVuUlF4U3JoOUxmcStEYTVKc0pkcnEwY2J3d0txR0tabzZuYzFtaGN5QVBNUVEvcUhWd0pQdVJZZWNIQk44d1RuWU5yRGdkV1d4YXJFQWFnVmkrMkUzQ3k2TDVtN0UwUzZNOU85YWVyK2Z5SitXTnNHbVlpU3kyL0FKUlpaZ25KNUNrQi8rOWdR');
             "
           >
-            <!-- CONTENT -->
-            <div class="p-[3rem] z-[2]">
+            <div class="px-[1.8rem] py-[2rem] z-[2]">
               <h3
                 class="text-[22px] lg:text-[28px] text-[#1d1d1f] mt-0 leading-[1.1] font-medium md:font-semibold"
               >
@@ -581,8 +570,7 @@
               --bg-url: url('https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-50-holiday-watch-se-202511?wid=960&hei=1000&fmt=jpeg&qlt=90&.v=UWdrNzNrY0ZiOGhRNlVuUlF4U3JoOXlzalBnQlhPRFpjZ0xYam5Pd0tYc1dLZXJqVmFsbnhRcUdNVU4xNFVUZjczTGJ1bkVZOVdxMC9CSUwydmQ4a0NEQitwUkl0K1BsbXBFa3ZzYkFwT0paZC9Mc1lFZzNORmk3Ulc0NVVkQTE');
             "
           >
-            <!-- CONTENT -->
-            <div class="p-[3rem] z-[2]">
+            <div class="px-[1.8rem] py-[2rem] z-[2]">
               <h3
                 class="text-[22px] lg:text-[28px] text-[#1d1d1f] mt-0 leading-[1.1] font-medium md:font-semibold"
               >
@@ -613,9 +601,7 @@
       </div>
 
       <!-- Personalization -->
-      <div
-        class="lg:pl-[22px] xl:pl-[120px] w-full md:py-4 select-none relative"
-      >
+      <div class="w-full md:py-4 select-none relative">
         <!-- Header -->
         <div
           class="block md:flex flex-row gap-1 items-start w-full font-[500] text-[24px] md:text-[20px] lg:text-[29px] leading-tight tracking-tight mb-2 lg:m-0 pl-[22px]"
@@ -633,7 +619,7 @@
 
         <div
           id="categoryScroll"
-          class="relative w-full flex items-center gap-5 md:gap-4 lg:gap-5 overflow-x-auto overflow-y-hidden scroll-smooth snap-x snap-mandatory whitespace-nowrap no-scrollbar py-8 md:py-0 lg:py-8 px-[22px]"
+          class="relative w-full flex items-center gap-5 md:gap-4 lg:gap-5 overflow-x-auto overflow-y-hidden scroll-smooth snap-x snap-mandatory whitespace-nowrap no-scrollbar py-4 md:py-3 lg:py-8 px-[22px]"
         >
           <div
             class="relative flex flex-col overflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] md:min-w-[20rem] lg:min-w-[400px] h-[25rem] lg:h-[500px]"
@@ -645,7 +631,6 @@
               --bg-url: url('https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-holiday-engraving-202511?wid=800&hei=1000&fmt=png-alpha&.v=VXNuZmVZU0R3VzJZalF2dFJTeUN3OHpsNkNPdlBTek5UUTJnR2hnYjFTUnJKNHVhYyszMXA5b0NXK0pyZit0S0RqRlBHZUVBNDNOWURodnJuL3FXOGZGTG92MExJbXhSakVGc0FMTVkzQVJJb0huN1Y3Q1N0Z2pqdnNuMnlyZGY');
             "
           >
-            <!-- CONTENT -->
             <div class="px-[1.8rem] py-[2rem] z-[2]">
               <div
                 class="mb-2 text-gray-700 text-[14px] md:text-[11px] lg:text-[14px]"
@@ -662,27 +647,29 @@
           </div>
 
           <div
-            class="relative flex flex-col justify-betweenverflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] h-[25rem] lg:h-[500px]"
+            class="relative flex flex-col justify-between verflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] h-[25rem] lg:h-[500px]"
           >
-            <!-- PRODUCT IMAGE -->
-            <div class="flex justify-center items-center pt-10">
+            <div class="flex flex-col justify-center items-center pt-10">
               <img
                 src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-select-11in-wifi-starlight-202405?wid=400&hei=400&fmt=jpeg&qlt=90&.v=MHJ3M044Wm5ySDVTUVJHY090MTFQVWtSRUR3V1RTblN3TXd3RE5HclJweDg3UmJzb2NjQUV1VlpRd0w2aUtjcDgvcThyMWgxemFRblVaVUJ2Vlg2MzRKWlgzZzdyUXEzcGE2bUxYbWVvdG8zeVE1UVFDb1ZvUWw5Zzk3d0J3RUw"
                 alt="iPad Air"
                 class="w-[180px] lg:w-[260px] object-contain"
               />
+              <div class="flex justify-center gap-3 mt-6">
+                <span class="w-3 h-3 rounded-full bg-[#c7c7c7]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#b3c1d1]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#d0d0d0]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#ece8e4]"></span>
+              </div>
             </div>
 
-            <!-- CONTENT -->
             <div class="p-[1.8rem] text-start">
-              <!-- TITLE -->
               <h3
-                class="text-[20px] lg:text-[22px] font-semibold text-[#1d1d1f] mb-2"
+                class="text-[17px] md:text-[15px] lg:text-[17px] font-medium text-[#1d1d1f] mb-2"
               >
                 11-inch iPad Air
               </h3>
 
-              <!-- SUBTEXT -->
               <p class="text-[14px] leading-[1.4] text-[#6e6e73] pr-4">
                 From ₹9317.00/mo. with instant cashback⁵⁵ and No Cost EMI⁵ or
                 ₹59900.00‡
@@ -690,175 +677,1276 @@
             </div>
           </div>
           <div
-            class="relative flex flex-col justify-betweenverflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] h-[25rem] lg:h-[500px]"
+            class="relative flex flex-col justify-between verflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] h-[25rem] lg:h-[500px]"
           >
-            <!-- PRODUCT IMAGE -->
-            <div class="flex justify-center items-center pt-10">
+            <div class="flex flex-col justify-center items-center pt-10">
               <img
-                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-select-11in-wifi-starlight-202405?wid=400&hei=400&fmt=jpeg&qlt=90&.v=MHJ3M044Wm5ySDVTUVJHY090MTFQVWtSRUR3V1RTblN3TXd3RE5HclJweDg3UmJzb2NjQUV1VlpRd0w2aUtjcDgvcThyMWgxemFRblVaVUJ2Vlg2MzRKWlgzZzdyUXEzcGE2bUxYbWVvdG8zeVE1UVFDb1ZvUWw5Zzk3d0J3RUw"
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/airpods-pro-3-hero-select-202509?wid=400&hei=400&fmt=jpeg&qlt=90&.v=cmp4MmZ6OWxOeHNNTXh4SzlBNUpEb1RucE9zZTI5eEREaWZpY29lSld3eVRLNDVIb25yeWxTSzhxdXNNaFBBZmJGcXNRQnFCV0w3WVRjTExvdm1ic1YxRUxFRmRlWDBITzhnRmZ5OTRmaVdKTExiOEFsRmxtQ2Nua0tRSC83MkI"
                 alt="iPad Air"
                 class="w-[180px] lg:w-[260px] object-contain"
               />
+              <div class="flex justify-center gap-3 mt-6">
+                <span class="w-3 h-3 rounded-full bg-[#c7c7c7]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#b3c1d1]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#d0d0d0]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#ece8e4]"></span>
+              </div>
             </div>
 
-            <!-- CONTENT -->
             <div class="p-[1.8rem] text-start">
-              <!-- TITLE -->
               <h3
-                class="text-[20px] lg:text-[22px] font-semibold text-[#1d1d1f] mb-2"
+                class="text-[17px] md:text-[15px] lg:text-[17px] font-medium text-[#1d1d1f] mb-2"
               >
-                11-inch iPad Air
+                AirPods Pro 3
               </h3>
 
-              <!-- SUBTEXT -->
               <p class="text-[14px] leading-[1.4] text-[#6e6e73] pr-4">
-                From ₹9317.00/mo. with instant cashback⁵⁵ and No Cost EMI⁵ or
-                ₹59900.00‡
+                MRP ₹25900.00 . (Incl. of all taxes)
               </p>
             </div>
           </div>
           <div
-            class="relative flex flex-col justify-betweenverflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] h-[25rem] lg:h-[500px]"
+            class="relative flex flex-col justify-between verflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] h-[25rem] lg:h-[500px]"
           >
-            <!-- PRODUCT IMAGE -->
-            <div class="flex justify-center items-center pt-10">
+            <div class="flex flex-col justify-center items-center pt-10">
               <img
-                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-select-11in-wifi-starlight-202405?wid=400&hei=400&fmt=jpeg&qlt=90&.v=MHJ3M044Wm5ySDVTUVJHY090MTFQVWtSRUR3V1RTblN3TXd3RE5HclJweDg3UmJzb2NjQUV1VlpRd0w2aUtjcDgvcThyMWgxemFRblVaVUJ2Vlg2MzRKWlgzZzdyUXEzcGE2bUxYbWVvdG8zeVE1UVFDb1ZvUWw5Zzk3d0J3RUw"
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/airtag-single-select-202104?wid=400&hei=400&fmt=jpeg&qlt=90&.v=a2ZqcUtUS1VMaUZQNkl6T3JzY1ZmM2VtMnRWRDBsa0dSNys0czlzRGpsWkQ4eDQxcUNOL3l1WDd2VTYzMXJYbkJkRlpCNVhYU3AwTldRQldlSnpRa04wNmhtdWpIWGRLcEEveXhsL2hzSkE"
                 alt="iPad Air"
                 class="w-[180px] lg:w-[260px] object-contain"
               />
+              <div class="flex justify-center gap-3 mt-6">
+                <span class="w-3 h-3 rounded-full bg-[#c7c7c7]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#b3c1d1]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#d0d0d0]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#ece8e4]"></span>
+              </div>
             </div>
 
-            <!-- CONTENT -->
             <div class="p-[1.8rem] text-start">
-              <!-- TITLE -->
               <h3
-                class="text-[20px] lg:text-[22px] font-semibold text-[#1d1d1f] mb-2"
+                class="text-[17px] md:text-[15px] lg:text-[17px] font-medium text-[#1d1d1f] mb-2"
               >
-                11-inch iPad Air
+                Air Tag
               </h3>
 
-              <!-- SUBTEXT -->
               <p class="text-[14px] leading-[1.4] text-[#6e6e73] pr-4">
-                From ₹9317.00/mo. with instant cashback⁵⁵ and No Cost EMI⁵ or
-                ₹59900.00‡
+                MRP ₹3490.00 . (Incl. of all taxes)
               </p>
             </div>
           </div>
           <div
-            class="relative flex flex-col justify-betweenverflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] h-[25rem] lg:h-[500px]"
+            class="relative flex flex-col justify-between verflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] h-[25rem] lg:h-[500px]"
           >
-            <!-- PRODUCT IMAGE -->
-            <div class="flex justify-center items-center pt-10">
+            <div class="flex flex-col justify-center items-center pt-10">
               <img
-                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-select-11in-wifi-starlight-202405?wid=400&hei=400&fmt=jpeg&qlt=90&.v=MHJ3M044Wm5ySDVTUVJHY090MTFQVWtSRUR3V1RTblN3TXd3RE5HclJweDg3UmJzb2NjQUV1VlpRd0w2aUtjcDgvcThyMWgxemFRblVaVUJ2Vlg2MzRKWlgzZzdyUXEzcGE2bUxYbWVvdG8zeVE1UVFDb1ZvUWw5Zzk3d0J3RUw"
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/airtag-4pack-select-202104?wid=400&hei=400&fmt=jpeg&qlt=90&.v=QVI2eUgvdU1qT1VRdEZUOXVUVHgrUmZnMlRIVFU1Yit0TSswSXV4bjc5N3orcnl2V0hYTnBDZFJsUUc5VmZyZmdsbGZlRHV0Q3JlbHJxWXRlWjZpMnJPQTNyRVhhNGRpYTR6T3lHNDdQQlE"
                 alt="iPad Air"
                 class="w-[180px] lg:w-[260px] object-contain"
               />
+              <div class="flex justify-center gap-3 mt-6">
+                <span class="w-3 h-3 rounded-full bg-[#c7c7c7]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#b3c1d1]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#d0d0d0]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#ece8e4]"></span>
+              </div>
             </div>
 
-            <!-- CONTENT -->
             <div class="p-[1.8rem] text-start">
-              <!-- TITLE -->
               <h3
-                class="text-[20px] lg:text-[22px] font-semibold text-[#1d1d1f] mb-2"
+                class="text-[17px] md:text-[15px] lg:text-[17px] font-medium text-[#1d1d1f] mb-2"
               >
-                11-inch iPad Air
+                AirTag 4 pack
               </h3>
 
-              <!-- SUBTEXT -->
               <p class="text-[14px] leading-[1.4] text-[#6e6e73] pr-4">
-                From ₹9317.00/mo. with instant cashback⁵⁵ and No Cost EMI⁵ or
-                ₹59900.00‡
+                MRP ₹11900.00 . (Incl. of all taxes)
               </p>
             </div>
           </div>
           <div
-            class="relative flex flex-col justify-betweenverflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] h-[25rem] lg:h-[500px]"
+            class="relative flex flex-col justify-between verflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] h-[25rem] lg:h-[500px]"
           >
-            <!-- PRODUCT IMAGE -->
-            <div class="flex justify-center items-center pt-10">
+            <div class="flex flex-col justify-center items-center pt-10">
               <img
-                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-select-11in-wifi-starlight-202405?wid=400&hei=400&fmt=jpeg&qlt=90&.v=MHJ3M044Wm5ySDVTUVJHY090MTFQVWtSRUR3V1RTblN3TXd3RE5HclJweDg3UmJzb2NjQUV1VlpRd0w2aUtjcDgvcThyMWgxemFRblVaVUJ2Vlg2MzRKWlgzZzdyUXEzcGE2bUxYbWVvdG8zeVE1UVFDb1ZvUWw5Zzk3d0J3RUw"
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MX2D3?wid=400&hei=400&fmt=jpeg&qlt=90&.v=RjlhOFBxWlM5RUNuemg5bVk0UkM1ZllvYS9naDJJdU9KTWdGWjhKWFRmTDg1MEFKWWNMUG9Rb3dXVmNIY08yN3BPSDJJa3AzaC96dU9WMVFWZ2lmZlE"
                 alt="iPad Air"
                 class="w-[180px] lg:w-[260px] object-contain"
               />
+              <div class="flex justify-center gap-3 mt-6">
+                <span class="w-3 h-3 rounded-full bg-[#c7c7c7]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#b3c1d1]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#d0d0d0]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#ece8e4]"></span>
+              </div>
             </div>
 
-            <!-- CONTENT -->
             <div class="p-[1.8rem] text-start">
-              <!-- TITLE -->
               <h3
-                class="text-[20px] lg:text-[22px] font-semibold text-[#1d1d1f] mb-2"
+                class="text-[17px] md:text-[15px] lg:text-[17px] font-medium text-[#1d1d1f] mb-2"
               >
-                11-inch iPad Air
+                Apple Pencil Pro
               </h3>
 
-              <!-- SUBTEXT -->
               <p class="text-[14px] leading-[1.4] text-[#6e6e73] pr-4">
-                From ₹9317.00/mo. with instant cashback⁵⁵ and No Cost EMI⁵ or
-                ₹59900.00‡
+                MRP ₹11900.00 . (Incl. of all taxes)
               </p>
             </div>
           </div>
           <div
-            class="relative flex flex-col justify-betweenverflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] h-[25rem] lg:h-[500px]"
+            class="relative flex flex-col justify-between verflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] h-[25rem] lg:h-[500px]"
           >
-            <!-- PRODUCT IMAGE -->
-            <div class="flex justify-center items-center pt-10">
+            <div class="flex flex-col justify-center items-center pt-10">
               <img
-                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-select-11in-wifi-starlight-202405?wid=400&hei=400&fmt=jpeg&qlt=90&.v=MHJ3M044Wm5ySDVTUVJHY090MTFQVWtSRUR3V1RTblN3TXd3RE5HclJweDg3UmJzb2NjQUV1VlpRd0w2aUtjcDgvcThyMWgxemFRblVaVUJ2Vlg2MzRKWlgzZzdyUXEzcGE2bUxYbWVvdG8zeVE1UVFDb1ZvUWw5Zzk3d0J3RUw"
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-select-wifi-starlight-202410?wid=400&hei=400&fmt=jpeg&qlt=90&.v=NmJhVkxMSzd4RmRrSjJwN2s4VWJVL1BpQlQwb3h0VkRmZ2J1a0V4U1RJTURvZG9pZUh0ZVdsZ3d0ZzJlNmQyZitQRjdUS291STIvUmV6S3dwODFvajFObHMxRGNYQ3hxbjhkSVFBcEhLK09oR3VQMzF1d29JZFI5MzRzQU1iMmQ"
                 alt="iPad Air"
                 class="w-[180px] lg:w-[260px] object-contain"
               />
+              <div class="flex justify-center gap-3 mt-6">
+                <span class="w-3 h-3 rounded-full bg-[#c7c7c7]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#b3c1d1]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#d0d0d0]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#ece8e4]"></span>
+              </div>
             </div>
 
-            <!-- CONTENT -->
             <div class="p-[1.8rem] text-start">
-              <!-- TITLE -->
               <h3
-                class="text-[20px] lg:text-[22px] font-semibold text-[#1d1d1f] mb-2"
+                class="text-[17px] md:text-[15px] lg:text-[17px] font-medium text-[#1d1d1f] mb-2"
               >
-                11-inch iPad Air
+                iPad Mini
               </h3>
 
-              <!-- SUBTEXT -->
               <p class="text-[14px] leading-[1.4] text-[#6e6e73] pr-4">
-                From ₹9317.00/mo. with instant cashback⁵⁵ and No Cost EMI⁵ or
-                ₹59900.00‡
+                From 7817.00/mo. with instant cashback⁵⁵ and No Cost EMI⁵ or
+                ₹49900.00‡
               </p>
             </div>
           </div>
           <div
-            class="relative flex flex-col justify-betweenverflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] h-[25rem] lg:h-[500px]"
+            class="relative flex flex-col justify-between verflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] h-[25rem] lg:h-[500px]"
           >
-            <!-- PRODUCT IMAGE -->
-            <div class="flex justify-center items-center pt-10">
+            <div class="flex flex-col justify-center items-center pt-10">
               <img
-                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-select-11in-wifi-starlight-202405?wid=400&hei=400&fmt=jpeg&qlt=90&.v=MHJ3M044Wm5ySDVTUVJHY090MTFQVWtSRUR3V1RTblN3TXd3RE5HclJweDg3UmJzb2NjQUV1VlpRd0w2aUtjcDgvcThyMWgxemFRblVaVUJ2Vlg2MzRKWlgzZzdyUXEzcGE2bUxYbWVvdG8zeVE1UVFDb1ZvUWw5Zzk3d0J3RUw"
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/airpods-4-anc-select-202409?wid=400&hei=400&fmt=jpeg&qlt=90&.v=Qklmb1JJend3cVIxSUxIeFBIRk96bThJMURFZUhTTm9tejgvK2t1SGM0aEQ4eDQxcUNOL3l1WDd2VTYzMXJYbkJkRlpCNVhYU3AwTldRQldlSnpRa01rSksyTE9QS1lFVXpHNmJsRVlaOWM"
                 alt="iPad Air"
                 class="w-[180px] lg:w-[260px] object-contain"
               />
+              <div class="flex justify-center gap-3 mt-6">
+                <span class="w-3 h-3 rounded-full bg-[#c7c7c7]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#b3c1d1]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#d0d0d0]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#ece8e4]"></span>
+              </div>
             </div>
 
-            <!-- CONTENT -->
             <div class="p-[1.8rem] text-start">
-              <!-- TITLE -->
               <h3
-                class="text-[20px] lg:text-[22px] font-semibold text-[#1d1d1f] mb-2"
+                class="text-[17px] md:text-[15px] lg:text-[17px] font-medium text-[#1d1d1f] mb-2"
               >
-                11-inch iPad Air
+                AirPods 4 with Active Noise Cancellation
               </h3>
 
-              <!-- SUBTEXT -->
               <p class="text-[14px] leading-[1.4] text-[#6e6e73] pr-4">
-                From ₹9317.00/mo. with instant cashback⁵⁵ and No Cost EMI⁵ or
-                ₹59900.00‡
+                MRP 1799.00/mo. (Incl. of all taxes)
               </p>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Holiday Pick -->
+      <div class="w-full md:py-4 select-none relative">
+        <!-- Header -->
+        <div
+          class="block md:flex flex-row gap-1 items-start w-full font-[500] text-[24px] md:text-[20px] lg:text-[29px] leading-tight tracking-tight mb-2 lg:m-0 pl-[22px]"
+        >
+          <h2
+            class="inline bg-gradient-to-r from-[#337ae5] via-[#408fe5] via-[#d4734a] to-[#ea6b2e] bg-clip-text text-transparent select-none"
+          >
+            Holiday picks.
+          </h2>
+          <span class="inline text-[#6e6e73]"> Designed to delight. </span>
+        </div>
+
+        <div
+          id="categoryScroll"
+          class="relative w-full flex items-center gap-5 md:gap-4 lg:gap-5 overflow-x-auto overflow-y-hidden scroll-smooth snap-x snap-mandatory whitespace-nowrap no-scrollbar py-4 md:py-3 lg:py-8 px-[22px]"
+        >
+          <div
+            class="relative flex flex-col overflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] md:min-w-[20rem] lg:min-w-[400px] h-[25rem] lg:h-[500px]"
+            style="
+              background-image: var(--bg-url);
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: contain;
+              --bg-url: url('https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-holiday-quick-picks-202511?wid=800&hei=1000&fmt=png-alpha&.v=VXNuZmVZU0R3VzJZalF2dFJTeUN3NlFuQVo3RmFFcFNVMk9nWkpuTmdiVjhkTWtQaklqN1hVbUJuZDI2K0ZYR3FoMGhnTzlhZS83Wm5PWi9peVJQV1RhTXRvVjNWRm1GTzNhemV2TllMV1RDYXg0eDBXNi9GME1kQzh0ZVBrRE8');
+            "
+          >
+            <div class="px-[1.8rem] py-[2rem] z-[2]">
+              <div
+                class="mb-2 text-gray-700 text-[14px] md:text-[11px] lg:text-[14px]"
+              >
+                ACCESSORIES
+              </div>
+              <h3
+                class="text-[22px] lg:text-[28px] text-[#1d1d1f] mt-0 leading-[1.1] font-medium md:font-semibold"
+              >
+                Add some special extras.
+              </h3>
+            </div>
+          </div>
+          <div
+            class="relative flex flex-col justify-between verflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] h-[25rem] lg:h-[500px]"
+          >
+            <div class="flex flex-col justify-center items-center pt-10">
+              <img
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MGFJ4?wid=400&hei=400&fmt=jpeg&qlt=90&.v=OTdLd3ZrWUw0RHQyVDIzWE1aclo3UFlvYS9naDJJdU9KTWdGWjhKWFRmS09sejdlODJQNFcxdTJNMk5ocVJHc3RTdGNjRTladmRYdmIvRXVOdG1PK1E"
+                alt="iPad Air"
+                class="w-[180px] lg:w-[260px] object-contain"
+              />
+              <div class="flex justify-center gap-3 mt-6">
+                <span class="w-3 h-3 rounded-full bg-[#c7c7c7]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#b3c1d1]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#d0d0d0]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#ece8e4]"></span>
+              </div>
+            </div>
+
+            <div class="p-[1.8rem] text-start">
+              <h3
+                class="text-[17px] md:text-[15px] lg:text-[17px] font-medium text-[#1d1d1f] mb-2 pr-4 pb-3"
+              >
+                iPhone 17 Pro Silicone Case with MagSafe – Terra Cotta
+              </h3>
+
+              <p class="text-[14px] leading-[1.4] text-[#6e6e73] pr-4">
+                MRP ₹4900.00 . (Incl. of all taxes)
+              </p>
+            </div>
+          </div>
+          <div
+            class="relative flex flex-col justify-between verflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] h-[25rem] lg:h-[500px]"
+          >
+            <div class="flex flex-col justify-center items-center pt-10">
+              <img
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MWR53?wid=400&hei=400&fmt=jpeg&qlt=90&.v=ajV3b21xWEFZMk9IUUc3Vk9la2VYUFlvYS9naDJJdU9KTWdGWjhKWFRmS1k0bHBLaWFydnd1M2dkWnNlNnh0L0xYRHdlUFJHSExtS2FEYW8vblJkRXc"
+                alt="iPad Air"
+                class="w-[180px] lg:w-[260px] object-contain"
+              />
+              <div class="flex justify-center gap-3 mt-6">
+                <span class="w-3 h-3 rounded-full bg-[#c7c7c7]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#b3c1d1]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#d0d0d0]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#ece8e4]"></span>
+              </div>
+            </div>
+
+            <div class="p-[1.8rem] text-start">
+              <h3
+                class="text-[17px] md:text-[15px] lg:text-[17px] font-medium text-[#1d1d1f] mb-2 pr-4 pb-3"
+              >
+                Magic Keyboard for iPad Pro 13" (M5) - US English - Black
+              </h3>
+
+              <p class="text-[14px] leading-[1.4] text-[#6e6e73] pr-4">
+                MRP ₹33900.00 . (Incl. of all taxes)
+              </p>
+            </div>
+          </div>
+          <div
+            class="relative flex flex-col justify-between verflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] h-[25rem] lg:h-[500px]"
+          >
+            <div class="flex flex-col justify-center items-center pt-10">
+              <img
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MX743?wid=400&hei=400&fmt=jpeg&qlt=90&.v=d1RLSDZzQTRtK1UxZmVlUFRKNGgvZllvYS9naDJJdU9KTWdGWjhKWFRmSjNqeEcvVzZaaVU2a3ptRnN4aU8wUGovUE9KcXhKNTlHR1RBR2lHbUtXcWc"
+                alt="iPad Air"
+                class="w-[180px] lg:w-[260px] object-contain"
+              />
+              <div class="flex justify-center gap-3 mt-6">
+                <span class="w-3 h-3 rounded-full bg-[#c7c7c7]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#b3c1d1]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#d0d0d0]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#ece8e4]"></span>
+              </div>
+            </div>
+
+            <div class="p-[1.8rem] text-start">
+              <h3
+                class="text-[17px] md:text-[15px] lg:text-[17px] font-medium text-[#1d1d1f] mb-2 pr-4 pb-3"
+              >
+                Powerbeats Pro 2 – High-Performance Earbuds ...
+              </h3>
+
+              <p class="text-[14px] leading-[1.4] text-[#6e6e73] pr-4">
+                MRP ₹29900.00 . (Incl. of all taxes)
+              </p>
+            </div>
+          </div>
+          <div
+            class="relative flex flex-col justify-between verflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] h-[25rem] lg:h-[500px]"
+          >
+            <div class="flex flex-col justify-center items-center pt-10">
+              <img
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MXK63?wid=400&hei=400&fmt=jpeg&qlt=90&.v=QXNyZUVaR2UzT1Y4dlE2TWlnejRIdllvYS9naDJJdU9KTWdGWjhKWFRmTGhtOWE0YThxS1czK3JNYk5zY1dEQ2MzdzE1a1FVV25NVWpPZ3M3ZmswYnc"
+                alt="iPad Air"
+                class="w-[180px] lg:w-[260px] object-contain"
+              />
+              <div class="flex justify-center gap-3 mt-6">
+                <span class="w-3 h-3 rounded-full bg-[#c7c7c7]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#b3c1d1]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#d0d0d0]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#ece8e4]"></span>
+              </div>
+            </div>
+
+            <div class="p-[1.8rem] text-start">
+              <h3
+                class="text-[17px] md:text-[15px] lg:text-[17px] font-medium text-[#1d1d1f] mb-2 pr-4 pb-3"
+              >
+                Magic Mouse (USB‑C) - Black Multi-Touch Surface
+              </h3>
+
+              <p class="text-[14px] leading-[1.4] text-[#6e6e73] pr-4">
+                MRP ₹9500.00 . (Incl. of all taxes)
+              </p>
+            </div>
+          </div>
+          <div
+            class="relative flex flex-col justify-between verflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] h-[25rem] lg:h-[500px]"
+          >
+            <div class="flex flex-col justify-center items-center pt-10">
+              <img
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MFL84ref?wid=400&hei=400&fmt=jpeg&qlt=90&.v=RmpNMGR0YTFseEVDWTBqME9rV2NjTmVidldMUGJjaXo4L3NxcmNtKzZhVHU2Qkx1YnhVZ1JqVmI3VVY4M1FILzVTbFNaVVNVTWxTTGpzMlJGRll1R2c"
+                alt="iPad Air"
+                class="w-[180px] lg:w-[260px] object-contain"
+              />
+              <div class="flex justify-center gap-3 mt-6">
+                <span class="w-3 h-3 rounded-full bg-[#c7c7c7]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#b3c1d1]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#d0d0d0]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#ece8e4]"></span>
+              </div>
+            </div>
+
+            <div class="p-[1.8rem] text-start">
+              <h3
+                class="text-[17px] md:text-[15px] lg:text-[17px] font-medium text-[#1d1d1f] mb-2 pr-4 pb-3"
+              >
+                46mm Turmeric Braided Solo Loop - Size 6
+              </h3>
+
+              <p class="text-[14px] leading-[1.4] text-[#6e6e73] pr-4">
+                MRP ₹9500.00 . (Incl. of all taxes)
+              </p>
+            </div>
+          </div>
+          <div
+            class="relative flex flex-col justify-between verflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] h-[25rem] lg:h-[500px]"
+          >
+            <div class="flex flex-col justify-center items-center pt-10">
+              <img
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MXK83?wid=400&hei=400&fmt=jpeg&qlt=90&.v=TzJRM0NjSnlTSXlkT2NOTm4ydlM3UFlvYS9naDJJdU9KTWdGWjhKWFRmSkI1VGROVE4xejU4M2pNdzRuWkdqRWxIRXJxcDVrcWpHSTlvNjZvQW1QRGc"
+                alt="iPad Air"
+                class="w-[180px] lg:w-[260px] object-contain"
+              />
+              <div class="flex justify-center gap-3 mt-6">
+                <span class="w-3 h-3 rounded-full bg-[#c7c7c7]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#b3c1d1]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#d0d0d0]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#ece8e4]"></span>
+              </div>
+            </div>
+
+            <div class="p-[1.8rem] text-start">
+              <h3
+                class="text-[17px] md:text-[15px] lg:text-[17px] font-medium text-[#1d1d1f] mb-2 pr-4 pb-3"
+              >
+                Magic Keyboard with Touch ID and Numeric Keypad for Mac...
+              </h3>
+
+              <p class="text-[14px] leading-[1.4] text-[#6e6e73] pr-4">
+                MRP 19500.00/mo. (Incl. of all taxes)
+              </p>
+            </div>
+          </div>
+          <div
+            class="relative flex flex-col justify-between verflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] h-[25rem] lg:h-[500px]"
+          >
+            <div class="flex flex-col justify-center items-center pt-10">
+              <img
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MGFY4?wid=400&hei=400&fmt=jpeg&qlt=90&.v=MWUvUDVtanBNbk96NWJoRHZvMnp4L1lvYS9naDJJdU9KTWdGWjhKWFRmSkFSN0Q1aE5zNTltUHdXOWFWaktVT0ZtazltUkhlSWoxRnYrdmd1N1BEK2c"
+                alt="iPad Air"
+                class="w-[180px] lg:w-[260px] object-contain"
+              />
+              <div class="flex justify-center gap-3 mt-6">
+                <span class="w-3 h-3 rounded-full bg-[#c7c7c7]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#b3c1d1]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#d0d0d0]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#ece8e4]"></span>
+              </div>
+            </div>
+
+            <div class="p-[1.8rem] text-start">
+              <h3
+                class="text-[17px] md:text-[15px] lg:text-[17px] font-medium text-[#1d1d1f] mb-2 pr-4 pb-3"
+              >
+                AirTag FineWoven Key Ring - Fox Orange
+              </h3>
+
+              <p class="text-[14px] leading-[1.4] text-[#6e6e73] pr-4">
+                MRP 3900.00/mo. (Incl. of all taxes)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Get Inspired -->
+      <div class="w-full md:py-4 select-none relative">
+        <!-- Header -->
+        <div
+          class="block md:flex flex-row gap-1 items-start w-full font-[500] text-[24px] md:text-[20px] lg:text-[29px] leading-tight tracking-tight mb-2 lg:m-0 pl-[22px]"
+        >
+          <h2
+            class="inline bg-gradient-to-r from-[#337ae5] via-[#408fe5] via-[#d4734a] to-[#ea6b2e] bg-clip-text text-transparent select-none"
+          >
+            Get Inspired.
+          </h2>
+          <span class="inline text-[#6e6e73]"> More ways to amaze. </span>
+        </div>
+
+        <div
+          id="categoryScroll"
+          class="relative w-full flex items-center gap-5 md:gap-4 lg:gap-5 overflow-x-auto overflow-y-hidden scroll-smooth snap-x snap-mandatory whitespace-nowrap no-scrollbar py-4 md:py-3 lg:py-8 px-[22px]"
+        >
+          <div
+            class="relative flex flex-col overflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] md:min-w-[20rem] lg:min-w-[400px] h-[25rem] lg:h-[500px]"
+            style="
+              background-image: var(--bg-url);
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: contain;
+              --bg-url: url('https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-holiday-apple-music-202511?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=VXNuZmVZU0R3VzJZalF2dFJTeUN3eFZzRWlpRlErWmlmWnRVUkpTbFAzaWdtb2I1a2p0R1V2Szc4QmpSVVF0VVVrc1JZVkQ0S2s0elFpK2Y1K2lCS1NsOG1PN3FBRzN3cEphZ2ZrZllTNFpQTnNPYkc3T0h5RmdmSmV0eWpIclg');
+            "
+          >
+            <div class="px-[1.8rem] py-[3rem] z-[2]">
+              <h3
+                class="text-[22px] lg:text-[28px] text-[#1d1d1f] mb-2 leading-[1.1] font-medium md:font-semibold"
+              >
+                Apple Music
+              </h3>
+              <div
+                class="mb-2 text-gray-700 text-[14px] md:text-[11px] lg:text-[18px]"
+              >
+                Get 3 months of Apple Music free with your Apple Watch.
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative flex flex-col justify-between verflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] h-[25rem] lg:h-[500px]"
+          >
+            <div class="flex flex-col justify-center items-center pt-10">
+              <img
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/homepod-mini-select-midnight-202407?wid=400&hei=400&fmt=jpeg&qlt=90&.v=K2c3bEwyaWVDeDZkdHpLbHkwcGVSaFRaZXZublY0K2p0Ri9sOWcwbVh6Z3MyRklFU09LL25EMWVvTS9lU0RvZVB0RzNpQ0Mxc293RHpBd2NJd0FqVzN2azliSkUzNG9FK21TK1NqRnlyMjArWGFIL0UwVkMzbDdvcGtJTUszbFE"
+                alt="iPad Air"
+                class="w-[180px] lg:w-[260px] object-contain"
+              />
+              <div class="flex justify-center gap-3 mt-6">
+                <span class="w-3 h-3 rounded-full bg-[#c7c7c7]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#b3c1d1]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#d0d0d0]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#ece8e4]"></span>
+              </div>
+            </div>
+
+            <div class="p-[1.8rem] text-start">
+              <h3
+                class="text-[17px] md:text-[15px] lg:text-[17px] font-medium text-[#1d1d1f] mb-2 pr-4 pb-3"
+              >
+                HomePod mini - Midnight
+              </h3>
+
+              <p class="text-[14px] leading-[1.4] text-[#6e6e73] pr-4">
+                MRP ₹10900.00 . (Incl. of all taxes)
+              </p>
+            </div>
+          </div>
+          <div
+            class="relative flex flex-col justify-between verflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] h-[25rem] lg:h-[500px]"
+          >
+            <div class="flex flex-col justify-center items-center pt-10">
+              <img
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MUW43?wid=400&hei=400&fmt=jpeg&qlt=90&.v=aVpaWm9SelRwZkhzWDFUM1NxQ0xUdllvYS9naDJJdU9KTWdGWjhKWFRmSnNlVnN6Nk9JbXRKOXBHdndDeUFudWJHTjFVWnl0c0U0T1pud1B4UEN1aHc"
+                alt="iPad Air"
+                class="w-[180px] lg:w-[260px] object-contain"
+              />
+              <div class="flex justify-center gap-3 mt-6">
+                <span class="w-3 h-3 rounded-full bg-[#c7c7c7]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#b3c1d1]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#d0d0d0]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#ece8e4]"></span>
+              </div>
+            </div>
+
+            <div class="p-[1.8rem] text-start">
+              <h3
+                class="text-[17px] md:text-[15px] lg:text-[17px] font-medium text-[#1d1d1f] mb-2 pr-4 pb-3"
+              >
+                Beats Solo 4 – On-Ear Wireless Headphones – Slate Blue
+              </h3>
+
+              <p class="text-[14px] leading-[1.4] text-[#6e6e73] pr-4">
+                MRP ₹22900.00 . (Incl. of all taxes)
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="relative flex flex-col overflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] md:min-w-[20rem] lg:min-w-[400px] h-[25rem] lg:h-[500px]"
+            style="
+              background-image: var(--bg-url);
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: contain;
+              --bg-url: url('https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-holiday-apple-tv-202511?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=VXNuZmVZU0R3VzJZalF2dFJTeUN3L0VtM1Jmb0l6OTVXSFFaL1psTmVGWmIvZlJ6UXVYVjBqYzBPd1BtdytFcG1td3JHMmlHM0d0VzBMMGs5ZHR4WnltQTBYZy9adGJQZVdjaTlKSHlLbkFMUU1vdC82VktqWnA4QTljT2RDblc');
+            "
+          >
+            <div class="px-[1.8rem] py-[2rem] z-[2] text-white">
+              <div class="mb-2 text-[14px] md:text-[11px] lg:text-[14px]">
+                APPLE TV
+              </div>
+              <h3
+                class="text-[22px] lg:text-[28px] mb-2 leading-[1.1] font-medium md:font-semibold"
+              >
+                Get 3 months of Apple TV free when you buy an Apple device.
+              </h3>
+            </div>
+          </div>
+          <div
+            class="relative flex flex-col justify-between verflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] h-[25rem] lg:h-[500px]"
+          >
+            <div class="flex flex-col justify-center items-center pt-10">
+              <img
+                src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/apple-tv-4k-hero-select-202210?wid=400&hei=400&fmt=jpeg&qlt=90&.v=a3VoZW85YUhreXN3ZFlSUDc3a0tqdU1qeWRTYWRhVU5NM3d6SkhmNzkxTVZOYmZXUnpWekhFcFdLRUF2UkJ6V3ZvdUZlR0V0VUdJSjBWaDVNVG95Yk00TVVQMlI3ajlibTFyV0ErUUJmMG8"
+                alt="iPad Air"
+                class="w-[180px] lg:w-[260px] object-contain"
+              />
+              <div class="flex justify-center gap-3 mt-6">
+                <span class="w-3 h-3 rounded-full bg-[#c7c7c7]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#b3c1d1]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#d0d0d0]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#ece8e4]"></span>
+              </div>
+            </div>
+
+            <div class="p-[1.8rem] text-start">
+              <h3
+                class="text-[17px] md:text-[15px] lg:text-[17px] font-medium text-[#1d1d1f] mb-2 pr-4 pb-3"
+              >
+                Apple TV 4K Wi‑Fi with 64GB storage
+              </h3>
+
+              <p class="text-[14px] leading-[1.4] text-[#6e6e73] pr-4">
+                MRP ₹14900.00 . (Incl. of all taxes)
+              </p>
+            </div>
+          </div>
+          <div
+            class="relative flex flex-col overflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] md:min-w-[20rem] lg:min-w-[400px] h-[25rem] lg:h-[500px]"
+            style="
+              background-image: var(--bg-url);
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: contain;
+              --bg-url: url('https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-50-subscriptions-202108?wid=960&hei=1000&fmt=jpeg&qlt=90&.v=WW05TjdlcC83b2p3NDlrR3ZVbk1xYmJOQmJzSVJ3UFJiNTcwZlp0V0h2dlNTMm5RTnVQcDVKVGwvVHBJTkp3VG54cStVNU5BQmhzbkxYRGxDWUc3R1psb281c0JUdmlyWGZzV21BRWpYWkwwREZQdlFzU2hiTkVCKzY4ODFKOWE');
+            "
+          >
+            <div class="px-[1.8rem] py-[2rem] z-[2]">
+              <h3
+                class="text-[22px] lg:text-[28px] text-[#1d1d1f] mb-2 leading-[1.1] font-medium md:font-semibold pt-6"
+              >
+                Four Apple services. One <br />
+                easy subscription.
+              </h3>
+            </div>
+          </div>
+          <div
+            class="relative flex flex-col overflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] md:min-w-[20rem] lg:min-w-[400px] h-[25rem] lg:h-[500px]"
+            style="
+              background-image: var(--bg-url);
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: contain;
+              --bg-url: url('https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-50-homekit-202405_GEO_IN?wid=960&hei=1000&fmt=jpeg&qlt=90&.v=UWdrNzNrY0ZiOGhRNlVuUlF4U3JoejVHYVpyWFdSYy85NGlTbU1VNHZsOU5vejA3aW9Ea2JXTXN5ZGl5bUxlekNCU0FaeWoydmlkcUQ2ZE1iOXpORnBtQjF2dGN4RmhWNnYxZGtlZCsrak1mNEcxcjYzMXRVdXBLRkJKcHQ0Q1c');
+            "
+          >
+            <div class="px-[1.8rem] py-[2rem] z-[2]">
+              <div
+                class="mb-2 text-gray-700 text-[14px] md:text-[11px] lg:text-[14px]"
+              >
+                HOME
+              </div>
+              <h3
+                class="text-[22px] lg:text-[28px] text-[#1d1d1f] mb-2 leading-[1.1] font-medium md:font-semibold"
+              >
+                See how one app can <br />
+                control your entire home.
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Only at Apple -->
+      <div class="w-full md:py-4 select-none relative">
+        <!-- Header -->
+        <div
+          class="block md:flex flex-row gap-1 items-start w-full font-[500] text-[24px] md:text-[20px] lg:text-[29px] leading-tight tracking-tight mb-2 lg:m-0 pl-[22px] py-4"
+        >
+          <h2
+            class="inline bg-gradient-to-r from-[#337ae5] via-[#408fe5] via-[#d4734a] to-[#ea6b2e] bg-clip-text text-transparent select-none"
+          >
+            Only at Apple.
+          </h2>
+          <span class="inline text-[#6e6e73]"> All set for the season. </span>
+        </div>
+
+        <div
+          id="categoryScroll"
+          class="relative w-full flex items-center gap-5 md:gap-4 lg:gap-5 overflow-x-auto overflow-y-hidden scroll-smooth snap-x snap-mandatory whitespace-nowrap no-scrollbar py-4 md:py-3 lg:py-8 px-[22px]"
+        >
+          <div
+            class="relative flex flex-col overflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] md:min-w-[20rem] lg:min-w-[400px] h-[25rem] lg:h-[500px]"
+            style="
+              background-image: var(--bg-url);
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: contain;
+              --bg-url: url('https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-nso-202512_GEO_IN?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=V09hVzhTS1pBMnFVelhoQ3M2Mk41VmlnbTk0ekJRMjZUdDdrc0FHZDVEN245S05qekNUdVUwMVFyK1pKaERUd2JGcXNRQnFCV0w3WVRjTExvdm1ic2ZHRUhwMjUxWERJOHoxc0tZQm55Zmw3elJuQlNOb1hBU2ZGc01uK0d5YTU');
+            "
+          >
+            <div class="px-[1.8rem] py-[2rem] z-[2] text-white">
+              <div class="mb-2 text-[14px] md:text-[11px] lg:text-[14px]">
+                NEW STORE OPENING
+              </div>
+              <h3
+                class="text-[22px] lg:text-[28px] mb-2 leading-[1.1] font-medium md:font-semibold"
+              >
+                Brilliant things lie in store.
+              </h3>
+              <p class="text-[17px] md:text-[15px] lg:text-[17px]">
+                Apple medium opens on 11 December.
+              </p>
+            </div>
+          </div>
+          <div
+            class="relative flex flex-col overflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] md:min-w-[20rem] lg:min-w-[400px] h-[25rem] lg:h-[500px]"
+            style="
+              background-image: var(--bg-url);
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: cover;
+              --bg-url: url('https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-holiday-specialist-help-202511?wid=4000&hei=4167&fmt=p-jpg&qlt=95&.v=VXNuZmVZU0R3VzJZalF2dFJTeUN3K0hwSnRqZittbW9zMW4wdkliUkY4czJtSnl1aWxWK21rcHM4QnZ6MzIvSS85UDFrREVCUFJWRFNDVDBTQjFJZ3VCc3FjamJwVXJjd2U3WEc3Smc2MXc5bnRCTzNjcGJSeTBxcEdNeDUvdDdmbW94YnYxc1YvNXZ4emJGL0IxNFp3');
+            "
+          >
+            <div class="px-[1.8rem] py-[2rem] z-[2]">
+              <div
+                class="mb-2 text-[14px] text-gray-700 md:text-[11px] lg:text-[14px]"
+              >
+                SMALL BUSINESS
+              </div>
+              <h3
+                class="text-[22px] lg:text-[28px] text-[#1d1d1f] mb-2 leading-[1.1] font-medium md:font-semibold"
+              >
+                From enterprise to small <br />
+                business, we’ll work with <br />
+                you.
+              </h3>
+            </div>
+          </div>
+          <div
+            class="relative flex flex-col overflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] md:min-w-[20rem] lg:min-w-[400px] h-[25rem] lg:h-[500px]"
+            style="
+              background-image: var(--bg-url);
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: cover;
+              --bg-url: url('https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-holiday-gifting-202511?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=VXNuZmVZU0R3VzJZalF2dFJTeUN3N0FnNjZ5b3VuRHdiZ0w2a3JLMHRPM2lDdDlGRG51RlhGY1hOcndnQ2dsa3FmS3YvQ0doSFZENndQR0J4TTRqbjJYN2ZHbXp0SUFVOXM4K0lrV09qWDF1ZFlybWdjbnlsQ3RZTHhVWXhKSDc');
+            "
+          >
+            <div class="px-[1.8rem] py-[2rem] z-[2]">
+              <div
+                class="mb-2 text-[14px] text-gray-700 md:text-[11px] lg:text-[14px]"
+              >
+                APPLE STORE APP
+              </div>
+              <h3
+                class="text-[17px] lg:text-[28px] text-[#1d1d1f] mb-2 leading-[1.1] font-medium md:font-semibold"
+              >
+                Let them know it’s on <br />
+                the way.
+              </h3>
+              <p class="text-[13px] md:text-[14px] lg:text-[17px]">
+                Send medium digital gift message that’s easy to <br class="md:hidden" />
+                schedule, fun to give, and fun to get.
+              </p>
+            </div>
+          </div>
+          <div
+            class="relative flex flex-col overflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] md:min-w-[20rem] lg:min-w-[400px] h-[25rem] lg:h-[500px]"
+            style="
+              background-image: var(--bg-url);
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: cover;
+              --bg-url: url('https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-holiday-delivery-pickup-202511?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=VXNuZmVZU0R3VzJZalF2dFJTeUN3OEhURHAzWTRheHBYbjAwcUUxa2hucklZRWJDcEdBQXFBeFhlbncwWHB0NUhkV3EvSkFicjVSdTltY1FJV1cvUTlrb3YwRE90eklmVkIwdHovcEFheWhkUFdYaXF6Sm5tdXN5bFROSnoxR3M');
+            "
+          >
+            <div class="px-[1.8rem] py-[3rem] z-[2]">
+              <h3
+                class="text-[22px] lg:text-[28px] text-[#1d1d1f] mb-2 leading-[1.1] font-medium md:font-semibold"
+              >
+                Get gifts in time for the <br />
+                holidays with free delivery <br />
+                or easy pickup.
+              </h3>
+            </div>
+          </div>
+          <div
+            class="relative flex flex-col overflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] md:min-w-[20rem] lg:min-w-[400px] h-[25rem] lg:h-[500px]"
+            style="
+              background-image: var(--bg-url);
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: cover;
+              --bg-url: url('https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-50-specialist-video-202509_GEO_IN?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=TkJLQU9OWTZMS1N4dlhoOWl3SEhrYnlpTHAvaU1TZWJjTXg3K2FoelBrWm5QWkRWVkQreS9hNkYrR3V6eWFwQUFNR1RJN3ZTRU0xNTN2dFc2ZitxSnRrb3YwRE90eklmVkIwdHovcEFheWdaRDBsWVp2QktibVN1ZGcvbS9iM2Q');
+            "
+          >
+            <div class="px-[1.8rem] py-[2rem] z-[2]">
+              <h3
+                class="text-[22px] lg:text-[28px] text-[#1d1d1f] mb-2 leading-[1.1] font-medium md:font-semibold"
+              >
+                Shop with a Specialist over video.
+              </h3>
+              <p class="text-[15px] md:text-[15px] lg:text-[17px]">
+                Choose medium next device in a guided, one-way video <br />
+                session.
+              </p>
+            </div>
+          </div>
+          <div
+            class="relative flex flex-col overflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] md:min-w-[20rem] lg:min-w-[500px] h-[25rem] lg:h-[500px]"
+            style="
+              background-image: var(--bg-url);
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: cover;
+              --bg-url: url('https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-50-personal-setup-202408?wid=960&hei=1000&fmt=jpeg&qlt=90&.v=cFhHZjJBWFBWT2pMQnNFR2RGWlEwWlNLRUlsMkFxY1ZMQzZzY0tkenJrbmJpYlE0VldEazFQNXh6WFBPRkF3SkNCU0FaeWoydmlkcUQ2ZE1iOXpORmpBUGxFb0lRTlNHWjd1dU1qQmNiSElybzRWSGZSUmg3aDF5MjF6RzJrM0o');
+            "
+          >
+            <div class="px-[1.8rem] py-[2rem] z-[2]">
+              <div
+                class="mb-2 text-[14px] text-gray-700 md:text-[11px] lg:text-[14px]"
+              >
+                PERSONAL SETUP
+              </div>
+              <h3
+                class="text-[17px] lg:text-[28px] text-[#1d1d1f] mb-2 leading-[1.1] font-medium md:font-semibold"
+              >
+                Set up your new device with help <br />
+                from a Specialist.
+              </h3>
+              <p class="text-[15px] md:text-[14px] lg:text-[17px]">
+                Let medium guide you through data transfer, the latest <br class="hidden md:block" />
+                features and more, in an online, one-to-one session.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Special Store -->
+      <div class="w-full md:py-4 select-none relative">
+        <!-- Header -->
+        <div
+          class="block md:flex flex-row gap-1 items-start w-full font-[500] text-[24px] md:text-[20px] lg:text-[29px] leading-tight tracking-tight mb-2 lg:m-0 pl-[22px] py-4"
+        >
+          <h2
+            class="inline bg-gradient-to-r from-[#337ae5] via-[#408fe5] via-[#d4734a] to-[#ea6b2e] bg-clip-text text-transparent select-none"
+          >
+            Special stores.
+          </h2>
+          <span class="inline text-[#6e6e73]">
+            Exclusive savings for students and educators.
+          </span>
+        </div>
+
+        <div
+          id="categoryScroll"
+          class="relative w-full flex items-center gap-5 md:gap-4 lg:gap-5 overflow-x-auto overflow-y-hidden scroll-smooth snap-x snap-mandatory whitespace-nowrap no-scrollbar py-4 md:py-3 lg:py-8 px-[22px]"
+        >
+          <div
+            class="relative flex flex-col overflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] md:min-w-[20rem] lg:min-w-[400px] h-[25rem] lg:h-[500px]"
+            style="
+              background-image: var(--bg-url);
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: contain;
+              --bg-url: url('https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-bts-edu-macbook-air-ipad-air-202503?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=bTAvUVhobndWL01MVC9aenBVVGo5YWZmUzB4a3czWENOTU1QWVJ1K01WWk5LOEsyMEhpRHE1T1EzSDFwQVpKVzF1WTFUcUFiTi80Y2ZLM2ZEQmtMcjJhUXpzSGp3b1lnNUp6M2lSQzZEVVBiYmVpOUU2RG04OHJUUjJybTZTeHFHaXB3VUEzd1huUnhZRnQ3eTQ1QUdB');
+            "
+          >
+            <div class="px-[1.8rem] py-[2rem] z-[2]">
+              <div
+                class="mb-2 text-gray-700 text-[14px] md:text-[11px] lg:text-[14px]"
+              >
+                EDUCATION
+              </div>
+              <h3
+                class="text-[22px] lg:text-[28px] text-[#1d1d1f] mb-2 leading-[1.1] font-medium md:font-semibold"
+              >
+                Buy a new Mac or iPad <br />
+                with education savings.
+              </h3>
+            </div>
+          </div>
+          <div
+            class="relative flex flex-col overflow-hidden bg-white rounded-[18px] shadow-[2px_4px_12px_#00000014] transition-all duration-300 whitespace-normal cursor-pointer hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] min-w-[20rem] md:min-w-[20rem] lg:min-w-[400px] h-[25rem] lg:h-[500px]"
+            style="
+              background-image: var(--bg-url);
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: contain;
+              --bg-url: url('https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-business-202506?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=TVRWamYxMHBJRG5zb0o5SDIweUVicDBGT083bklMYlpBa00yWlRMeFBWWDZXYXJlRUd1cTBYTnRnbTNlazIvMzRHeXB5TnVsU3R6Qjd0Y2JzbURyWEpkQUpISXpCRGs5NlQ4Rlg4eUtkYTUrYWpGdS9XeFgvbS9ITnNYOEhYaG4');
+            "
+          >
+            <div class="px-[1.8rem] py-[2rem] z-[2] text-white">
+              <div class="mb-2 text-[14px] md:text-[11px] lg:text-[14px]">
+                SMALL BUSINESS
+              </div>
+              <h3
+                class="text-[22px] lg:text-[28px] mb-2 leading-[1.1] font-medium md:font-semibold"
+              >
+                From enterprise to small <br />
+                business, we’ll work with <br />
+                you.
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Quick Links  -->
+      <section class="w-full bg-gray-100 py-10">
+        <div class="px-4 box-border">
+          <h2 class="text-xl font-semibold text-gray-800 mb-5">Quick Links</h2>
+
+          <div class="overflow-x-auto no-scrollbar -mx-4 px-4">
+            <div
+              class="flex items-center gap-3 w-max md:text-[13px] lg:text-[1rem]"
+            >
+              <button
+                class="px-5 py-2 border border-gray-800 rounded-full text-gray-700 hover:text-white hover:bg-black transition duration-200"
+              >
+                Find a Store
+              </button>
+
+              <button
+                class="px-5 py-2 border border-gray-800 rounded-full text-gray-700 hover:text-white hover:bg-black transition duration-200"
+              >
+                Order Status
+              </button>
+
+              <button
+                class="px-5 py-2 border border-gray-800 rounded-full text-gray-700 hover:text-white hover:bg-black transition duration-200"
+              >
+                Shopping Help
+              </button>
+
+              <button
+                class="px-5 py-2 border border-gray-800 rounded-full text-gray-700 hover:text-white hover:bg-black transition duration-200"
+              >
+                Your Saves
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer
+        class="max-w-[1024px] mx-auto px-4 lg:px-6 bg-[#f5f5f7] text-[#6e6e73] text-sm"
+      >
+        <div class="py-2 flex items-center gap-2 text-xs">
+          <span class="text-black text-lg"></span>
+          <span>&gt;</span>
+          <span class="text-gray-600">Apple Store Online</span>
+        </div>
+        <!-- Desktop Footer -->
+        <div class="hidden lg:grid py-4 grid-cols-5 gap-6">
+          <div class="space-y-2">
+            <h4 class="text-[#1d1d1f] font-medium text-[13px]">
+              Shop and Learn
+            </h4>
+            <ul class="space-y-1.5 text-[13px]">
+              <li>Store</li>
+              <li>Mac</li>
+              <li>iPad</li>
+              <li>iPhone</li>
+              <li>Watch</li>
+              <li>AirPods</li>
+              <li>TV & Home</li>
+              <li>AirTag</li>
+              <li>Accessories</li>
+              <li>Gift Cards</li>
+            </ul>
+
+            <h4 class="pt-4 text-[#1d1d1f] font-medium text-[13px]">
+              Apple Wallet
+            </h4>
+            <ul class="space-y-1.5 text-[13px]">
+              <li>Wallet</li>
+            </ul>
+          </div>
+
+          <div class="space-y-2">
+            <h4 class="text-[#1d1d1f] font-medium text-[13px]">Account</h4>
+            <ul class="space-y-1.5 text-[13px]">
+              <li>Manage Your Apple Account</li>
+              <li>Apple Store Account</li>
+              <li>iCloud.com</li>
+            </ul>
+
+            <h4 class="pt-4 text-[#1d1d1f] font-medium text-[13px]">
+              Entertainment
+            </h4>
+            <ul class="space-y-1.5 text-[13px]">
+              <li>Apple One</li>
+              <li>Apple TV</li>
+              <li>Apple Music</li>
+              <li>Apple Arcade</li>
+              <li>Apple Podcasts</li>
+              <li>Apple Books</li>
+              <li>App Store</li>
+            </ul>
+          </div>
+
+          <div class="space-y-2">
+            <h4 class="text-[#1d1d1f] font-medium text-[13px]">Apple Store</h4>
+            <ul class="space-y-1.5 text-[13px]">
+              <li>Find a Store</li>
+              <li>Genius Bar</li>
+              <li>Today at Apple</li>
+              <li>Apple Summer Camp</li>
+              <li>Ways to Buy</li>
+              <li>Apple Trade In</li>
+              <li>Recycling Programme</li>
+              <li>Order Status</li>
+              <li>Shopping Help</li>
+            </ul>
+          </div>
+
+          <div class="space-y-2">
+            <h4 class="text-[#1d1d1f] font-medium text-[13px]">For Business</h4>
+            <ul class="space-y-1.5 text-[13px]">
+              <li>Apple and Business</li>
+            </ul>
+
+            <h4 class="pt-4 text-[#1d1d1f] font-medium text-[13px]">
+              For Education
+            </h4>
+            <ul class="space-y-1.5 text-[13px]">
+              <li>Apple and Education</li>
+              <li>Shop for Education</li>
+              <li>Shop for College</li>
+            </ul>
+
+            <h4 class="pt-4 text-[#1d1d1f] font-medium text-[13px]">
+              For Healthcare
+            </h4>
+            <ul class="space-y-1.5 text-[13px]">
+              <li>Apple in Healthcare</li>
+              <li>Health on Apple Watch</li>
+            </ul>
+          </div>
+
+          <div class="space-y-2">
+            <h4 class="text-[#1d1d1f] font-medium text-[13px]">Apple Values</h4>
+            <ul class="space-y-1.5 text-[13px]">
+              <li>Accessibility</li>
+              <li>Environment</li>
+              <li>Privacy</li>
+              <li>Supply Chain</li>
+            </ul>
+
+            <h4 class="pt-4 text-[#1d1d1f] font-medium text-[13px]">
+              About Apple
+            </h4>
+            <ul class="space-y-1.5 text-[13px]">
+              <li>Newsroom</li>
+              <li>Apple Leadership</li>
+              <li>Career Opportunities</li>
+              <li>Investors</li>
+              <li>Ethics & Compliance</li>
+              <li>Events</li>
+              <li>Contact Apple</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Mobile Accordion Footer -->
+        <div
+          class="lg:hidden max-w-6xl mx-auto lg:px-4 py-1 divide-y divide-gray-300"
+        >
+          <details class="group py-2 overflow-hidden">
+            <summary
+              class="flex items-center justify-between text-[13px] md:text-[10px] lg:text-[13px] font-normal cursor-pointer"
+            >
+              Shop and Learn <i class="fa-solid fa-angle-down"></i>
+            </summary>
+            <div
+              class="max-h-0 overflow-hidden transition-[max-height] duration-800 ease-in-out group-open:max-h-[1000px]"
+            >
+              <ul
+                class="mt-4 space-y-2 pl-4 pb-3 text-[13px] md:text-[10px] lg:text-[13px]"
+              >
+                <li>Store</li>
+                <li>Mac</li>
+                <li>iPad</li>
+                <li>iPhone</li>
+                <li>Watch</li>
+                <li>AirPods</li>
+                <li>TV & Home</li>
+                <li>AirTag</li>
+                <li>Accessories</li>
+                <li>Gift Cards</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="group py-2 overflow-hidden">
+            <summary
+              class="flex items-center justify-between text-[13px] md:text-[10px] lg:text-[13px] font-normal cursor-pointer"
+            >
+              Apple Wallet <i class="fa-solid fa-angle-down"></i>
+            </summary>
+            <div
+              class="max-h-0 overflow-hidden transition-[max-height] duration-800 ease-in-out group-open:max-h-[300px]"
+            >
+              <ul
+                class="mt-4 space-y-2 pl-4 pb-3 text-[13px] md:text-[10px] lg:text-[13px]"
+              >
+                <li>Wallet</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="group py-2 overflow-hidden">
+            <summary
+              class="flex items-center justify-between text-[13px] md:text-[10px] lg:text-[13px] font-normal cursor-pointer"
+            >
+              Account <i class="fa-solid fa-angle-down"></i>
+            </summary>
+            <div
+              class="max-h-0 overflow-hidden transition-[max-height] duration-800 ease-in-out group-open:max-h-[500px]"
+            >
+              <ul
+                class="mt-4 space-y-2 pl-4 pb-3 text-[13px] md:text-[10px] lg:text-[13px]"
+              >
+                <li>Manage Your Apple Account</li>
+                <li>Apple Store Account</li>
+                <li>iCloud.com</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="group py-2 overflow-hidden">
+            <summary
+              class="flex items-center justify-between text-[13px] md:text-[10px] lg:text-[13px] font-normal cursor-pointer"
+            >
+              Entertainment <i class="fa-solid fa-angle-down"></i>
+            </summary>
+            <div
+              class="max-h-0 overflow-hidden transition-[max-height] duration-800 ease-in-out group-open:max-h-[700px]"
+            >
+              <ul
+                class="mt-4 space-y-2 pl-4 pb-3 text-[13px] md:text-[10px] lg:text-[13px]"
+              >
+                <li>Apple One</li>
+                <li>Apple TV</li>
+                <li>Apple Music</li>
+                <li>Apple Arcade</li>
+                <li>Apple Podcasts</li>
+                <li>Apple Books</li>
+                <li>App Store</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="group py-2 overflow-hidden">
+            <summary
+              class="flex items-center justify-between text-[13px] md:text-[10px] lg:text-[13px] font-normal cursor-pointer"
+            >
+              Apple Store <i class="fa-solid fa-angle-down"></i>
+            </summary>
+            <div
+              class="max-h-0 overflow-hidden transition-[max-height] duration-800 ease-in-out group-open:max-h-[900px]"
+            >
+              <ul
+                class="mt-4 space-y-2 pl-4 pb-3 text-[13px] md:text-[10px] lg:text-[13px]"
+              >
+                <li>Find a Store</li>
+                <li>Genius Bar</li>
+                <li>Today at Apple</li>
+                <li>Apple Summer Camp</li>
+                <li>Ways to Buy</li>
+                <li>Apple Trade In</li>
+                <li>Recycling Programme</li>
+                <li>Order Status</li>
+                <li>Shopping Help</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="group py-2 overflow-hidden">
+            <summary
+              class="flex items-center justify-between text-[13px] md:text-[10px] lg:text-[13px] font-normal cursor-pointer"
+            >
+              For Business <i class="fa-solid fa-angle-down"></i>
+            </summary>
+            <div
+              class="max-h-0 overflow-hidden transition-[max-height] duration-800 ease-in-out group-open:max-h-[300px]"
+            >
+              <ul
+                class="mt-4 space-y-2 pl-4 pb-3 text-[13px] md:text-[10px] lg:text-[13px]"
+              >
+                <li>Apple and Business</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="group py-2 overflow-hidden">
+            <summary
+              class="flex items-center justify-between text-[13px] md:text-[10px] lg:text-[13px] font-normal cursor-pointer"
+            >
+              For Education <i class="fa-solid fa-angle-down"></i>
+            </summary>
+            <div
+              class="max-h-0 overflow-hidden transition-[max-height] duration-800 ease-in-out group-open:max-h-[500px]"
+            >
+              <ul
+                class="mt-4 space-y-2 pl-4 pb-3 text-[13px] md:text-[10px] lg:text-[13px]"
+              >
+                <li>Apple and Education</li>
+                <li>Shop for Education</li>
+                <li>Shop for College</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="group py-2 overflow-hidden">
+            <summary
+              class="flex items-center justify-between text-[13px] md:text-[10px] lg:text-[13px] font-normal cursor-pointer"
+            >
+              For Healthcare <i class="fa-solid fa-angle-down"></i>
+            </summary>
+            <div
+              class="max-h-0 overflow-hidden transition-[max-height] duration-800 ease-in-out group-open:max-h-[400px]"
+            >
+              <ul
+                class="mt-4 space-y-2 pl-4 pb-3 text-[13px] md:text-[10px] lg:text-[13px]"
+              >
+                <li>Apple in Healthcare</li>
+                <li>Health on Apple Watch</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="group py-2 overflow-hidden">
+            <summary
+              class="flex items-center justify-between text-[13px] md:text-[10px] lg:text-[13px] font-normal cursor-pointer"
+            >
+              Apple Values <i class="fa-solid fa-angle-down"></i>
+            </summary>
+            <div
+              class="max-h-0 overflow-hidden transition-[max-height] duration-800 ease-in-out group-open:max-h-[400px]"
+            >
+              <ul
+                class="mt-4 space-y-2 pl-4 pb-3 text-[13px] md:text-[10px] lg:text-[13px]"
+              >
+                <li>Accessibility</li>
+                <li>Environment</li>
+                <li>Privacy</li>
+                <li>Supply Chain</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="group py-2 overflow-hidden">
+            <summary
+              class="flex items-center justify-between text-[13px] md:text-[10px] lg:text-[13px] font-normal cursor-pointer"
+            >
+              About Apple <i class="fa-solid fa-angle-down"></i>
+            </summary>
+            <div
+              class="max-h-0 overflow-hidden transition-[max-height] duration-800 ease-in-out group-open:max-h-[600px]"
+            >
+              <ul
+                class="mt-4 space-y-2 pl-4 pb-3 text-[13px] md:text-[10px] lg:text-[13px]"
+              >
+                <li>Newsroom</li>
+                <li>Apple Leadership</li>
+                <li>Career Opportunities</li>
+                <li>Investors</li>
+                <li>Ethics & Compliance</li>
+                <li>Events</li>
+                <li>Contact Apple</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+
+        <div class="max-w-6xl mx-auto py-4 text-xs text-[#6e6e73]">
+          More ways to shop:
+          <a class="text-[#0066CC] underline" href="#">Find an Apple Store</a>
+          or
+          <a class="text-[#0066CC] underline" href="#">other retailer</a> near
+          you. Or call 000800 040 1966.
+        </div>
+
+        <div class="max-w-7xl mx-auto py-4 border-t text-gray-300">
+          <div
+            class="flex flex-col-reverse md:flex-row md:items-center md:justify-between gap-3"
+          >
+            <div
+              class="flex flex-col lg:flex-row items-start lg:items-center gap-1 text-[13px] md:text-[10px] lg:text-[13px] text-gray-500 font-light"
+            >
+              <p>Copyright © 2025 Apple Inc. All rights reserved.</p>
+
+              <span class="hidden lg:inline-block w-px h-4 bg-gray-400"></span>
+
+              <div class="flex flex-wrap items-center gap-2 text-gray-600">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <span class="inline-block">|</span>
+
+                <a href="#" class="hover:underline">Terms of Use</a>
+                <span class="inline-block">|</span>
+
+                <a href="#" class="hover:underline">Sales Policy</a>
+                <span class="inline-block">|</span>
+
+                <a href="#" class="hover:underline">Legal</a>
+                <span class="inline-block">|</span>
+
+                <a href="#" class="hover:underline">Site Map</a>
+              </div>
+            </div>
+
+            <div class="text-gray-700 hover:underline cursor-pointer">
+              India
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
 
     <!-- Simple JS -->
