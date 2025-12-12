@@ -34,59 +34,145 @@
     <!-- Header -->
     <!-- Navbar -->
     <header>
-      <nav class="w-full bg-[#f5f5f7]">
-        <div class="max-w-[1024px] w-full mx-auto">
+      <!-- NAVBAR -->
+      <nav class="w-full bg-[#f5f5f7] relative">
+        <div class="max-w-[1024px] w-full mx-auto relative">
           <div
-            class="w-full flex items-center gap-10 justify-between px-4 py-3 md:py-2"
+            class="w-full flex items-center justify-between px-4 py-3 md:py-2"
           >
+            <!-- Apple Logo -->
             <div class="flex items-center">
-              <a href="#">
-                <i class="fa-brands fa-apple text-md"></i>
-              </a>
+              <i class="fa-brands fa-apple text-md"></i>
             </div>
 
-            <div
-              class="hidden lg:flex gap-10 text-[13px] text-gray-800 font-normal"
+            <!-- Desktop Menu -->
+            <ul
+              class="hidden lg:flex gap-10 text-[13px] text-gray-800 font-normal items-center"
             >
-              <a href="#" class="hover:text-gray-600 whitespace-nowrap"
-                >Store</a
-              >
-              <a href="#" class="hover:text-gray-600 whitespace-nowrap">Mac</a>
-              <a href="#" class="hover:text-gray-600 whitespace-nowrap">iPad</a>
-              <a href="#" class="hover:text-gray-600 whitespace-nowrap"
-                >iPhone</a
-              >
-              <a href="#" class="hover:text-gray-600 whitespace-nowrap"
-                >Watch</a
-              >
-              <a href="#" class="hover:text-gray-600 whitespace-nowrap"
-                >AirPods</a
-              >
-              <a href="#" class="hover:text-gray-600 whitespace-nowrap"
-                >TV & Home</a
-              >
-              <a href="#" class="hover:text-gray-600 whitespace-nowrap"
-                >Entertainment</a
-              >
-              <a href="#" class="hover:text-gray-600 whitespace-nowrap"
-                >Accessories</a
-              >
-              <a href="#" class="hover:text-gray-600 whitespace-nowrap"
-                >Support</a
-              >
-            </div>
+              <li class="group cursor-pointer">
+                <span class="hover:text-gray-600 whitespace-nowrap">Store</span>
+
+                <div
+                  class="blur-overlay hidden group-hover:block top-44 fixed inset-0 bg-black/10 backdrop-blur-md z-50"
+                ></div>
+                <!-- DROPDOWN PANEL -->
+                <div
+                  class="absolute left-1/2 -translate-x-1/2 top-8 w-[calc(100vw-20px)] bg-white shadow-xl rounded-b-xl opacity-0 scale-y-0 group-hover:opacity-100 group-hover:scale-y-100 origin-top transition-all duration-300 py-12 z-50"
+                >
+                  <div class="w-full flex justify-center">
+                    <div
+                      class="max-w-[1024px] w-full mx-auto px-10 grid grid-cols-3 gap-12"
+                    >
+                      <div>
+                        <h4
+                          class="text-gray-500 text-[13px] uppercase tracking-wide mb-4"
+                        >
+                          Shop
+                        </h4>
+                        <ul
+                          class="space-y-3 text-[18px] font-medium leading-tight"
+                        >
+                          <li class="hover:text-blue-600 cursor-pointer">
+                            Shop Gifts
+                          </li>
+                          <li class="hover:text-blue-600 cursor-pointer">
+                            Mac
+                          </li>
+                          <li class="hover:text-blue-600 cursor-pointer">
+                            iPad
+                          </li>
+                          <li class="hover:text-blue-600 cursor-pointer">
+                            iPhone
+                          </li>
+                          <li class="hover:text-blue-600 cursor-pointer">
+                            Apple Watch
+                          </li>
+                          <li class="hover:text-blue-600 cursor-pointer">
+                            AirPods
+                          </li>
+                          <li class="hover:text-blue-600 cursor-pointer">
+                            Accessories
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <h4
+                          class="text-gray-500 text-[13px] uppercase tracking-wide mb-4"
+                        >
+                          Quick Links
+                        </h4>
+                        <ul class="space-y-2 text-[14px]">
+                          <li class="hover:text-blue-600 cursor-pointer">
+                            Find a Store
+                          </li>
+                          <li class="hover:text-blue-600 cursor-pointer">
+                            Order Status
+                          </li>
+                          <li class="hover:text-blue-600 cursor-pointer">
+                            Apple Trade In
+                          </li>
+                          <li class="hover:text-blue-600 cursor-pointer">
+                            Ways to Buy
+                          </li>
+                          <li class="hover:text-blue-600 cursor-pointer">
+                            Personal Setup
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <h4
+                          class="text-gray-500 text-[13px] uppercase tracking-wide mb-4"
+                        >
+                          Shop Special Stores
+                        </h4>
+                        <ul class="space-y-2 text-[14px]">
+                          <li class="hover:text-blue-600 cursor-pointer">
+                            Education
+                          </li>
+                          <li class="hover:text-blue-600 cursor-pointer">
+                            Business
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="hover:text-gray-600 whitespace-nowrap cursor-pointer">
+                Mac
+              </li>
+              <li class="hover:text-gray-600 whitespace-nowrap cursor-pointer">
+                iPad
+              </li>
+              <li class="hover:text-gray-600 whitespace-nowrap cursor-pointer">
+                iPhone
+              </li>
+              <li class="hover:text-gray-600 whitespace-nowrap cursor-pointer">
+                Watch
+              </li>
+              <li class="hover:text-gray-600 whitespace-nowrap cursor-pointer">
+                AirPods
+              </li>
+              <li class="hover:text-gray-600 whitespace-nowrap cursor-pointer">
+                TV & Home
+              </li>
+              <li class="hover:text-gray-600 whitespace-nowrap cursor-pointer">
+                Entertainment
+              </li>
+              <li class="hover:text-gray-600 whitespace-nowrap cursor-pointer">
+                Accessories
+              </li>
+              <li class="hover:text-gray-600 whitespace-nowrap cursor-pointer">
+                Support
+              </li>
+            </ul>
 
             <div class="flex items-center space-x-8">
-              <button>
-                <i
-                  class="fa-solid fa-magnifying-glass text-gray-600 text-sm"
-                ></i>
-              </button>
-
-              <button>
-                <i class="fa-solid fa-bag-shopping text-gray-600 text-sm"></i>
-              </button>
-
+              <i class="fa-solid fa-magnifying-glass text-gray-600 text-sm"></i>
+              <i class="fa-solid fa-bag-shopping text-gray-600 text-sm"></i>
               <button id="menuToggle" class="lg:hidden">
                 <i class="fa-solid fa-bars-staggered"></i>
               </button>
@@ -175,7 +261,7 @@
 
       <!-- Store Menu -->
       <div
-        class=" max-w-[1600px] w-full relative py-10 select-none overflow-x-hidden"
+        class="max-w-[1600px] w-full relative py-10 select-none overflow-x-hidden"
       >
         <div
           id="categoryScroll"
@@ -592,12 +678,12 @@
           </div>
           <!-- Slide button -->
         </div>
-        <button
+        <!-- <button
           id="slideRight"
           class="w-14 h-14 absolute right-6 top-1/2 -translate-y-1/2 bg-[#d2d2d7a3] rounded-full p-2 z-50 cursor-pointer"
         >
           <i class="fa-solid fa-chevron-right text-gray-700 text-3xl"></i>
-        </button>
+        </button> -->
       </div>
 
       <!-- Personalization -->
@@ -2108,18 +2194,6 @@
       slideBtn.addEventListener("click", () => {
         const itemWidth = scrollBox.children[0].offsetWidth + 64;
         scrollBox.scrollBy({ left: itemWidth, behavior: "smooth" });
-      });
-    </script>
-
-    <script>
-      const scrollContainer = document.getElementById("categoryScroll");
-      const slideRightBtn = document.getElementById("slideRight");
-
-      slideRightBtn.addEventListener("click", () => {
-        scrollContainer.scrollBy({
-          left: scrollContainer.offsetWidth,
-          behavior: "smooth",
-        });
       });
     </script>
   </body>
